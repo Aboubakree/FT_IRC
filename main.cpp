@@ -1,18 +1,11 @@
-#include "main.hpp"
+#include "Server.hpp"
 
 
-void    data_init()
-{
-    
-}
 
 int main(int ac, char** av)
 {
-    if (ac != 3)
-    {
-        std::cout << "usage : ./ircserv IPaddr port" << std::endl;
-        return 1;
-    }
-    data_init();
+    Server  server(ac, av);
+
+    server.loop();
     return 0;
 }

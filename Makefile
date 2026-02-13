@@ -1,8 +1,9 @@
-NAME = irc
+NAME = ircserv
 
-SRC = main.cpp
+SRC = main.cpp Server.cpp Client.cpp Channel.cpp join.cpp authentification.cpp topic.cpp\
+		kick.cpp invite.cpp mode.cpp privmsg.cpp fIleTransfer.cpp file.cpp Bot.cpp part.cpp
 
-OBJ = main.o
+OBJ = $(SRC:.cpp=.o)
 
 CXX = c++
 
